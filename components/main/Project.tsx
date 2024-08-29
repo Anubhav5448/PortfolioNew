@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectCard from "../sub/ProjectCard";
 import Link from "next/link";
 
@@ -13,11 +13,11 @@ function Project() {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         
-        <Link href="https://live-docs-pied.vercel.app/">
-        <ProjectCard src="/LiveDocs.png" title="Bank App" description="Banking App using Next.js 14, Tailwind CSS, Zod" />
-        </Link>
+        
+        <ProjectCard src="/LiveDocs.png" title="Live Collaboration App" description="Live collaborative App using Next.js, Tailwind CSS, Shadcn-UI, LiveBlocks"  />
+        
       
-        <ProjectCard src="/Evently.png" title="Event App" description="Event App using Next.js 14,TypeScript, Tailwind CSS, Zod, Stripe" />
+        <ProjectCard src="/Fight-Game.png" title="Pokemon FIght game" description="Arcade game based on pokemon characters using React, Tailwind CSS, Nes CSS for fonts" />
       </div>
     </div>
   );
