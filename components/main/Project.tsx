@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import Link from "next/link";
 
 function Project() {
   return (
@@ -11,7 +12,11 @@ function Project() {
         My Projects
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard src="/BankingApp.png" title="Bank App" description="Banking App using Next.js 14, Tailwind CSS, Zod" />
+        
+        <Link href="https://live-docs-pied.vercel.app/">
+        <ProjectCard src="/LiveDocs.png" title="Bank App" description="Banking App using Next.js 14, Tailwind CSS, Zod" />
+        </Link>
+      
         <ProjectCard src="/Evently.png" title="Event App" description="Event App using Next.js 14,TypeScript, Tailwind CSS, Zod, Stripe" />
       </div>
     </div>
